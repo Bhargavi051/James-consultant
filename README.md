@@ -1,2 +1,2 @@
 # James-consultant
-This is a consultant .
+This is a consultanting company website where services are provided .
