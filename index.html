@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Consultant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+  <style>
+    *{
+            text-decoration: none;
+            font-style: normal;
+            font-family: inherit;
+            text-align: center;
+            box-sizing: border-box;
+            
+
+        }
+        body{
+          overflow-x: hidden;
+          background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+        }
+
+
+/* <--- nav bar---> */
+
+    .nav{
+        
+        
+        padding-right: 15px;
+        padding: 15px; 
+        color: white;
+
+
+    }
+    .navdiv{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        /* background-color: #172a67; */
+        width: 100%;
+        text-decoration: none;
+        
+    }
+    .logo {
+        font-size: 35px;
+        font-weight: 600;
+         color:#172a67; 
+
+    }
+    /* .logo:hover{
+        text-decoration:wavy;
+    } */
+    li{
+            list-style: none;
+            display: inline; 
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+            
+    
+        }
+       li  a{
+            color:gray;
+            text-decoration: none; 
+             
+        }
+        a:hover{
+            color:#d3dcfa;
+            
+            
+        }
+        .login{
+            background-color:#172a67;
+            padding: 8px 16px;
+            border-radius: 250px;
+            color:white;
+            border:1px solid lightgray;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px;
+            
+
+        }
+        .signup{
+            background-color:#172a67;
+            padding: 8px 16px;
+            border-radius: 250px;
+            color:white;
+            border:none;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px
+
+        }
+        /* <--- day night mode---> */
+
+
+        /* styles.css */
+
+/* Default (Day Mode) Styles */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+ button {
+    /* position: absolute; */
+    top: 5px;
+    right: 10px;
+    padding: 5px;
+    cursor: pointer;
+} 
+
+.content {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* <--------------> */
+
+        .mountimg{
+            display: flex;
+            width: 100%;
+            height: auto;
+            position: relative;
+            
+        }
+
+        .bgblue{
+            width: 50%;
+            height: 50%;
+            top: 450px;
+            left: 25%;
+            position: absolute;
+            align-items: center;
+           
+        }
+
+        .h2{
+            display: flex;
+            position: absolute;
+            top: 500px;
+            left: 35%;
+            font-family: 'Courier New', Courier, monospace;
+            color:white;
+            font-size: 25px;
+
+            
+
+        }
+
+        
+        .h1{
+            display: flex;
+            position: absolute;
+            top: 570px;
+            left: 29%;
+            font-weight: bolder;
+            font-size: 65px;
+            /* font-size: 50px; */
+            color: white;
+        }
+
+        
+
+        .h3{
+            display: flex;
+            position: absolute;
+            top: 690px;
+            left: 37%;
+            font-family: 'Courier New', Courier, monospace;
+            color:white;
+
+        }
+
+        .col{
+          font-weight: bold;
+          font-size: 32px;
+          font-family: 'Courier New', Courier, monospace;
+        }
+
+        .colpara{
+          font-size: 15px;
+          font-family: 'Courier New', Courier, monospace;
+        }
+
+        .moreinfo{
+
+          background-color:#172a67;
+            padding: 8px 16px;
+            /* border-radius: 200px; */
+            color:white;
+            border:1px solid lightgray;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px;
+            text-decoration: none;
+
+        }
+
+        .downimg{
+          filter: blur(6px);
+          width: 100%;
+          height: 60%;
+          position: relative;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        .imgh1{
+          display: flex;
+            
+            
+            top: 1550px;
+             left: 40%; 
+            font-weight: bolder;
+            font-size: 65px;
+            color: black;
+            white-space: nowrap;
+            display: inline-block;
+            position: absolute;
+            animation: 3s linear 0s infinite  move;
+
+        }
+        @keyframes move {
+  0%,
+  25% {
+    transform: translateX(0%);
+    /* transform: translateX(30%); */
+    left: 40%;
+  }
+  75%,
+  100% {
+    transform: translateX(-100%);
+    left: 0%;
+  }
+}
+
+.imgp1{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1700px;
+  left:20% ;
+  padding: 40px;
+  font-size: 20px;
+
+}
+
+.imgp2{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1850px;
+  left:20%;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.moreinfo1{
+
+  background-color:#a4b1db;
+  padding: 8px 16px;
+  /* bottom:700px; */
+ 
+  /* border-radius: 200px; */
+  color:white;
+  border:1px solid lightgray;
+  font-size: 16px;
+  justify-content: center;
+  font-weight: 600;
+  gap: 8px;
+  text-decoration: none;
+
+}
+
+.contact{
+  background-color: #172a67;
+}
+    
+.contactus{
+  color:white;
+  text-shadow:1px ;
+  
+}
+
+
+/* <-----FOOTER--------> */
+
+
+.footer{
+            background-color:#c8d0ec;
+            color: black;
+            text-align: center;
+            width: 100%;
+        }
+        .footlink{
+
+            display: flex;
+            color: BLACK;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .footlink a{
+            color: black;
+            font-size: 10;
+            align-items: space-evenly;
+            justify-content: space-around;
+            text-decoration: none;
+        }
+
+       
+        
+
+        
+        
+
+  </style>
+  <body>
+    <nav class="nav">
+      <div class="navdiv">
+       <div class="logo">JAMES CONSULTING</div>
+       <ul> 
+           
+           <li><a href="#about">About Us</a></li>
+           <li><a href="#services">Project</a></li>
+           <li><a href="#services">Services</a></li>
+           <li><a href="#contact">Contact Us</a></li>
+           <li><a href="login.html" class="login">Log In</a></li>
+           
+           <li><a href="signup.html" class="signup">Sign Up</a></li>
+           
+           
+       </ul>
+
+      </div>
+   </nav>
+   <div>
+
+    <button id="mode-toggle">Switch Mode</button>
+    <!-- <div class="content">
+     </div>    -->
+
+     
+        <img  class="mountimg"src="/css/mountain/image/mount.jpg" alt="mountperson">
+
+<img class="bgblue" src="/css/mountain/image/bg_blue.webp " alt="bgblue">
+<h2 class="h2">Developing Innovative Strategies</h2>
+<h1 class="h1">ACHIEVING GROWTH</h1>
+<h3 class="h3">"If there is no struggle, <br>there is no progress.” </h3>
+</div>
+
+<br><br>
+
+<div id="services">
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+      SERVICES<br>
+      <br>
+      <p class="colpara">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you</p>
+      <a href="#" class="moreinfo">More Info</a>
+    </div>
+    <div class="col">
+      PROJECTS<br>
+      <br>
+      <p class="colpara">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you</p>
+      <a href="#" class="moreinfo">More Info</a>
+    </div>
+    <div class="col">
+      CLIENTS<br>
+      <br>
+      <p class="colpara">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you</p>
+      <a href="#" class="moreinfo">More Info</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<br>
+
+
+
+<div id="about">
+<img class="downimg" src="/css/mountain/image/mountperson.jpg" alt="downimg">
+<h1 class="imgh1">About Us</h1>
+<p class="imgp1">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit<br> Text” or double click me to add your own content and make changes to the font. Feel free<br> to drag and drop me anywhere you like on your page. I’m a great place for you to tell a<br> story and let your users know a little more about you.</p>
+<p class="imgp2">This is a great space to write a long text about your company and your services. You can <br>use this space to go into a little more detail about your company. Talk about your team<br> and what services you provide. Tell your visitors the story of how you came up with the idea<br> for your business and what makes you different from your competitors. Make your<br> company stand out and show your visitors who you are.</p>
+<!-- <a href="#" class="moreinfo1">More Info</a> -->
+</div>
+
+<br>
+
+<div id="contact">
+<div class="contact">
+  <h1 class="contactus">Contact Us</h1>
+
+  <form class="p-5">
+    <div class="row g-3">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+      
+    </div>
+    <br>
+    <div class="row g-3">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Subject" aria-label="subject">
+    </div>
+  </div>
+  <br>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Comments</label>
+  </div>
+  <br>
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60528.861325261205!2d73.77934563125!3d18.526469300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1397764cf1b%3A0x86a60445868cf527!2sSevenMentor%20%7C%20SAP%20Training%20Institute!5e0!3m2!1sen!2sin!4v1712816674656!5m2!1sen!2sin" width="600" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+</div>
+
+    
+  
+
+  </form>
+</div>
+
+
+
+<footer class="footer">
+  <div class="footcontent">
+
+      <p>Copyright 2024 James Consultant. All rights reserved.</p>
+
+  
+  <div class="footlink">
+      <h4><a href="#">Regulatory | </a></h4>
+      <h4><a href="#"> Policies | </a></h4>
+      <h4><a href="#">Terms & Conditions</a></h4>
+  </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+     
+    </script>
+     <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMES CONSULTING</title>
+    <STYLE>
+        *{
+            box-sizing: border-box;
+            /* align-items: center;
+            justify-content: center; */
+        }
+
+        body{
+
+        }
+         .nav{
+        
+        text-underline: none;
+        /* padding-right: 15px;*/
+        padding: 15px; 
+        /*color: white;*/
+
+
+    }
+    .navdiv{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        /* color: white; */
+        
+    }
+    .logo {
+        font-size: 35px;
+        font-weight: 600;
+         /* color:#2b005c;  */
+    }
+    li{
+            list-style: none;
+            display: inline; 
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+            
+    
+        }
+       li  a{
+            color:gray; 
+             
+        }
+        a:hover{
+            color:#d1c0e3;
+            
+            
+        }
+        .login{
+            background-color:transparent;
+            padding: 8px 16px;
+            border-radius: 250px;
+            color:#172a67;
+            border:1px solid lightgray;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px;
+            
+
+        }
+        .signup{
+            background-color:#172a67;
+            padding: 8px 16px;
+            border-radius: 250px;
+            color:white;
+            border:none;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px
+
+        }
+        hr{
+            /* color:#d1c0e3 ; */
+            background-color: transparent;
+        }
+
+        .container{
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background-color: lightgray;
+            position: absolute; */
+        }
+        .cont{
+            padding-top: 125px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+
+        }
+
+        .signin-form{
+
+            display: flex;
+            width: 500px;
+            height:490px;
+            padding:40px 32px;
+            flex-direction: column;
+            gap: 32px;
+            border-radius: 16px;
+            background-color: white;
+            box-shadow: 0 4px 16px 0 rgb(0,0,0.08);
+            align-items: center;
+            justify-content: center;
+            align-self: stretch;
+            
+        }
+        .signin-main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            row-gap:4px ;
+            column-gap: 4px;
+            align-self: stretch;
+        }
+        .signin-inactive-input
+        {
+            border-radius: 8px 8px 8px 8px;
+            border:1px solid lightgray;
+            margin: 0px;
+            display: flex;
+            height: 36px;
+            padding:8px 12px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            width: 100%;
+            outline: none;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -.07px;
+
+        }
+        .signin-box-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap:4px;
+            align-self: stretch;
+        }
+        .pass-wrapper 
+        {
+            display: flex;
+            width: 100%;
+            outline: none;
+            border:none;
+        }
+        .signin-inactive-input{
+            border-radius: 8px;
+            border:1px solid lightgray;
+            margin:0;
+
+        }
+        .pass-wrapper input {
+            outline: none;
+            border:none;
+        }
+        .signin-input{
+            border-radius: 8px 8px 8px 8px;
+            border:1px solid lightgray;
+            margin: 0px;
+            display: flex;
+            height: 36px;
+            padding:8px 12px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            width: 100%;
+            outline: none;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: -.07px;
+        }
+
+        .signin-eye-icon{
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        .forgetpassword{
+            margin:0;
+            text-decoration: none;
+            display: flex;
+            width: 436px;
+            justify-content: flex-end;
+            align-items: flex-start;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -.08px;
+
+        }
+        .paragraph{
+            text-decoration: none;
+        }
+
+        .forget{
+            text-decoration: none;
+        }
+        .signin-submit{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            align-self: stretch;
+        }
+        .signin-submit-btn{
+            width: 100%;
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            cursor: pointer;
+            border-radius: 250px;
+            background-color: #172a67;
+            border: none;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -.09px;
+        }
+        .paragraph{
+            margin: 0;
+            text-decoration: none;
+        }
+        p{
+            line-height: 1.5em;
+            color: var(--light-primary-gray-08);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -.08px;
+
+        }
+        .forget{
+            text-decoration: none;
+        }
+
+        .footer{
+            background-color:#c8d0ec;
+            color: black;
+            text-align: center;
+            width: 100%;
+        }
+        .footlink{
+
+            display: flex;
+            color: BLACK;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .footlink a{
+            color: black;
+            font-size: 10;
+            align-items: space-evenly;
+            justify-content: space-around;
+            text-decoration: none;
+        }
+
+       
+        
+    </STYLE>
+</head>
+<body>
+    <div>
+        <nav class="navbar-container">
+            <div class="logo">
+                <!-- <img alt="" loading="lazy" width="99" height="38" decoding="async" data-ning="1" style="color: transparent;" src=""> -->
+               <h1>JAMES CONSULTING</h1>
+            </div>
+        </nav>
+    </div>
+            <STYLE>
+                 .navbar-container{
+                display: flex;
+                max-width: 100%;
+                height: 56px;
+                padding:10px 24px;
+                align-items: center;
+                flex-shrink: 0;
+                background-color:#172a67;
+                z-index: 1000;
+
+            }
+            .logo{
+                color: white;
+                font-weight: bolder;
+                font-size: 10px;
+                text-align: center;
+                width:30px; height: 60px;
+            }
+            @media only screen and(min-width:769px)and (max-width:1024px){
+                .test{
+                    display: none;
+                }
+                .topNav-left-bottom{
+                    display: inline;
+                }
+            }
+             </STYLE> 
+
+        
+    </div>
+    
+    <div class="container">
+        <div class="cont">
+        <form class="signin-form">
+            <div class="signin-top">
+              <h1>Hi there, Welcome back..!!</h1>  
+            </div>
+            <div class="signin-main-container">
+                <label>Email Id</label>
+                <input class="signin-input signin-inactive-input" type="email" placeholder="enter email id"  required value="">
+            </div>
+            <div class="signin-box-container" >
+                <label>Enter Password</label>
+                <div class="pass-wrapper signin-inactive-input">
+                    <input class="signin-input" type="password" placeholder="enter password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"  required value="">
+                    <div class="signin-eye-icon">
+                        <img alt="" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" style="color:transparent;" src="">
+
+                    </div>
+                </div>
+                <p class="forgetpassword paragraph">
+                    <a class="forget" href="#">Forget Password</a>
+                </p>
+            </div>
+            <div class="signin-submit">
+                <input class="signin-submit-btn" type="submit" value="log In">
+                <p class="paragraph">Dont have an account?</p>
+                <strong>
+                    <a class="forget" href="#">Sign uP</a>
+                </strong>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footcontent">
+
+            <p>Copyright 2024 James Consultant. All rights reserved.</p>
+
+        
+        <div class="footlink">
+            <h4><a href="#">Regulatory | </a></h4>
+            <h4><a href="#"> Policies | </a></h4>
+            <h4><a href="#">Terms & Conditions</a></h4>
+        </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

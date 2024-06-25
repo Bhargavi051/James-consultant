@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .signup-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            background-color: white;
+        }
+        .signup-info{
+            width: 500px;
+            padding: 40px 32px;
+            display: flex;
+            gap:32px;
+            flex-direction: column;
+            border-radius: 16px;
+            background-color: white;
+            box-shadow: 0 4px 16px black;
+        }
+        .signup-welcometext{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            align-self: stretch;
+        }
+        h1{
+            color:white;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 32px;
+            letter-spacing: -.96px;
+            margin:0;
+        }
+        p{
+            margin: 0;
+            line-height: 1em;
+        }
+        .signup-inputs{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap:15px;
+            align-self: stretch;
+        }
+        .signup-fullname{
+            display: flex;
+            align-items: flex-start;
+            gap:15px;
+            align-self: stretch;
+            width: 100%;
+        }
+        .signup-firstname{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1 0;
+            gap: 4px;
+        }
+
+        .signup-lastname{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1 0;
+            gap: 4px;
+        }
+
+        .inactive input{
+            border-radius: 8px;
+            border: 1px solid lightgray;
+        }
+
+        .inactive input{
+            border-radius: 8px;
+            border: 1px solid lightgray;
+        }
+
+        .signup-input{
+            display: flex;
+            height: 36px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            width: 100%;
+            outline: none;
+            color: black;
+            margin: 0;
+            padding: 0 0 0 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -.07px;
+
+        }
+
+        .signup-input{
+            display: flex;
+            height: 36px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            width: 100%;
+            outline: none;
+            color: black;
+            margin: 0;
+            padding: 0 0 0 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -.07px;
+
+        }
+
+        .signup-Email-Id{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            align-self: stretch;
+            width: 100%;
+        }
+
+        .inactive input{
+            border-radius: 8px;
+            border: 1px solid lightgray;
+        }
+
+        .signup-input{
+            display: flex;
+            height: 36px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            width: 100%;
+            outline: none;
+            color: black;
+            margin: 0;
+            padding: 0 0 0 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -.07px;
+
+        }
+        .signup-org
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            align-self: stretch;
+            width: 100%;
+        }
+
+        .signup-box-container
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            align-self: stretch;
+            position: relative;
+            width: 100%;
+        }
+
+        .inactive input{
+            border-radius: 8px;
+            border: 1px solid lightgray;
+        }
+
+        .signup-input{
+            display: flex;
+            height: 36px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            width: 100%;
+            outline: none;
+            color: black;
+            margin: 0;
+            padding: 0 0 0 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -.07px;
+
+        }
+        .signup-pass-wrapper{
+            padding:8px 12px 8px 0;
+            width: 100%;
+            outline: none;
+            border: none;
+            width: 100%;
+        }
+        .password{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            align-self: stretch;
+
+
+        }
+
+        .signup-input{
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: -.07px;
+        }
+
+        .signup-eye-icon{
+            display: flex;
+            padding: 5px;
+        }
+
+        .signup-btn{
+            opacity: 0.3;
+            border: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 250px;
+            background-color:#172a67 ;
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+            align-self: stretch;
+            
+        }
+        .h1sign{
+            color: black;
+            font-size: 40px;
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar-container">
+            <div class="logo">
+                <!-- <img alt="" loading="lazy" width="99" height="38" decoding="async" data-ning="1" style="color: transparent;" src=""> -->
+               <h1>JAMES CONSULTING</h1>
+            </div>
+        </nav>
+        <style>
+            .navbar-container{
+                display: flex;
+                max-width: 100%;
+                height: 56px;
+                padding:10px 24px;
+                align-items: center;
+                flex-shrink: 0;
+                background-color: #172a67;
+                z-index: 1000;
+
+            }
+            .logo{
+                color: white;
+                font-weight: bolder;
+                font-size: 30px;
+                text-align: center;
+                width:50px; height: 50px;
+            }
+            @media only screen and(min-width:769px)and (max-width:1024px){
+                .test{
+                    display: none;
+                }
+                .topNav-left-bottom{
+                    display: inline;
+                }
+            }
+        </style>
+        <div class="signup-form">
+            <form class="signup-info">
+                <div class="signup-welcometext">
+                    <h1 CLASS="h1sign">Welcome</h1>
+                    <p>Let's get started with a few simple steps</p>
+                </div>
+                <div class="signup-inputs">
+                    <div class="signup-fullname">
+                        <div class="signin-firstname">
+                            <label>First Name</label>
+                            <input class="signup-input inactive-input" placeholder="First name" type="text" required="" value="">
+                        </div>
+                        <div class="signin-lastname">
+                            <label>Last Name</label>
+                            <input class="signup-input inactive-input" placeholder="Last name" type="text" required="" value="">
+                        </div>
+                        
+                    </div>
+                    <div class="signup-Email-Id">
+                        <label>Email Id</label>
+                            <input class="signup-input inactive-input" placeholder="Email id" type="text" required="" value="">
+                    </div>
+                    <div class="signup-org">
+                        <label>organisation Name</label>
+                            <input class="signup-input inactive-input" placeholder="oganisation name" type="text" required="" value="">
+                    </div>
+                    <div class="signup-box-container">
+                        <label>Create password</label>
+                        <div class=""signup-pass-wrapper signup-input inactive-input>
+                            <input type="password" required="" placeholder="password" value="">
+                            <div class="signup-eye-icon">
+                                <img alt="" loading="lazy" width="20" height="20" decoding="async" dat-nimg="1" style="color:transprent;" src=""> 
+                            </div> 
+                        </div>
+                        <p class="password-required">
+                            password must be at least 8 characters including at least one uppercase and lowercase letters,special character and a number. No white spaces allowed.
+                        </p>
+                    </div>
+
+                </div>
+                <button class="signup-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
